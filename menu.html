@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Feng Ye 88883843 -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grace Coffee</title>
+  <link rel="icon" href="./images/icon.png">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/menu.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- header -->
+    <header>
+      <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+      <p class="tagline">Project - Feng Ye - fye3843@conestogac.on.ca </p>
+    </header>
+
+    <!-- navigation -->
+    <nav>
+      <ul class="mainMenu">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./menu.html">Menu</a>
+          <ul class="subMenu">
+            <li><a href="./menu.html#video">Video</a>
+            <li><a href="./menu.html#table">Price</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- hero section -->
+      <section class="menuImg">
+        <img src="./images/menuImg.jpeg" alt="a cup of coffee">
+        <h2>Enjoy Your Time in Grace Coffee</h2>
+      </section>
+
+      <!-- video section -->
+      <section id="video">
+        <div class="videoInfo">
+          <h2>Best Coffee Fresh Making</h2>
+          <p>Morbi accumsan congue rutrum. In et purus convallis dolor pretium tempor et a justo. Ut et
+            aliquet magna. Nam et maximus enim, ac auctor felis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Morbi eleifend auctor nisi, nec ultricies felis. Aliquam egestas sapien id tempor rutrum. In vitae purus
+            pharetra eros mollis congue. Phasellus consectetur arcu at nunc placerat accumsan. </p>
+        </div>
+        <video controls poster="./images/make_coffee.jpeg">
+          <source src="./videos/make_coffee.mp4" type="video/mp4">
+          Your browser does not support HTML video.
+        </video>
+      </section>
+
+      <!-- table section -->
+      <section id="table">
+        <h2>Grace Coffee Menu</h2>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2" class="boldline">Coffees</th>
+              <th colspan="2" class="boldline">Snacks</th>
+              <th colspan="2">Combos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="foodname">Black Coffee</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Cake</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Combo</td>
+              <td>$9.9</td>
+            </tr>
+            <tr>
+              <td class="foodname">Black Coffee</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Cake</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Combo</td>
+              <td>$9.9</td>
+            </tr>
+            <tr>
+              <td class="foodname">Black Coffee</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Cake</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Combo</td>
+              <td>$9.9</td>
+            </tr>
+            <tr>
+              <td class="foodname">Black Coffee</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Cake</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Combo</td>
+              <td>$9.9</td>
+            </tr>
+            <tr>
+              <td class="foodname">Black Coffee</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Cake</td>
+              <td class="boldline">$5.9</td>
+              <td class="foodname">Combo</td>
+              <td>$9.9</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- form section -->
+      <section id="form">
+        <h2>Thank You For Your Feedback</h2>
+        <form action="#">
+
+          <!-- name and email -->
+          <div class="topField">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" required>
+            </div>
+          </div>
+
+          <!-- select field -->
+          <div>
+            <label for="favorite">Choose your favorite food:</label>
+            <select name="favorite" id="favorite">
+              <option value="">Choose your favorite food</option>
+              <optgroup label="coffees">
+                <option value="black-coffee">Black Coffee</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="latte">Latte</option>
+              </optgroup>
+              <optgroup label="snacks">
+                <option value="cheese-cake">Cheese Cake</option>
+                <option value="hotdog">Hotdog</option>
+                <option value="cookie">Cookie</option>
+              </optgroup>
+              <optgroup label="combos">
+                <option value="breakfast">Breakfast Combo</option>
+                <option value="party">Party Combo</option>
+                <option value="weekend">Weekend Combo</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <!-- textarea field -->
+          <div>
+            <label for="suggestion">Suggestion:</label>
+            <textarea name="suggestion" id="suggestion" cols="30" rows="10"></textarea>
+          </div>
+
+          <!-- checkbox field -->
+          <div>
+            <h4>Which following scenarios is/are more match your situation:</h4>
+            <div class="checkboxList">
+              <div class="checkbox">
+                <input type="checkbox" id="scenario1" name="scenario1" value="takeout">
+                <label for="scenario1">Take Out</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="scenario2" name="scenario2" value="dine-in">
+                <label for="scenario2">Dine-in</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="scenario3" name="scenario3" value="breakfast">
+                <label for="scenario3">Breakfast</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="scenario4" name="scenario4" value="lunch">
+                <label for="scenario4">Lunch</label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="scenario5" name="scenario5" value="afternoon">
+                <label for="scenario5">Afternoon</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- radio field -->
+          <div>
+            <h4>Please select your age:</h4>
+            <div class="radioList">
+              <div class="radio">
+                <input type="radio" id="young" name="age" value="young">
+                <label for="young">Under 30 years old</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="middle" name="age" value="middle">
+                <label for="middle">30-50 years old</label>
+              </div>
+              <div class="radio">
+                <input type="radio" id="middle" name="age" value="middle">
+                <label for="middle">Over 50 years old</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="formbtn">
+            <!-- reset button -->
+            <input type="reset" value="Reset">
+
+            <!-- submit button -->
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footerMenu">
+        <div>
+          <h3>Main</h3>
+          <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./menu.html">Menu</a>
+            <a href="./index.html#about">About</a>
+          </div>
+        </div>
+        <div>
+          <h3>Popular</h3>
+          <div class="menu">
+            <a href="./menu.html#table">Breakfast</a>
+            <a href="./menu.html#table">Coffees</a>
+            <a href="./menu.html#table">Snacks</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="menu">
+            <p>Address: 708 coffee street</p>
+            <a href="mailto:friendcoffee@gmail.com" target="_blank">Email: friendcoffee@gmail.com</a>
+            <p href="">Phone: 123-123-6789</p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy;copyright - Feng Ye - fye3843@conestogac.on.ca
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+/* Feng Ye 8883843 */
+/* home page */
+/* public  */
+.container {
+  margin: 0 auto;
+}
+
+
+/* header section */
+header {
+  background-color: #9de0ad;
+  color: #547980;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+
+header a {
+  width: 8vw;
+  height: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tagline {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.6vw;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+
+/* nav section */
+.mainMenu {
+  display: flex;
+  gap: 2vw;
+  padding: 2vw;
+  background-color: #547980;
+}
+
+.mainMenu a {
+  font-size: 1.6vw;
+  color: #fff;
+}
+
+.mainMenu {
+  position: relative;
+}
+
+.subMenu {
+  position: absolute;
+  display: none;
+  background-color: #54798080;
+  padding: 2vw 3vw;
+  z-index: 2;
+}
+
+.subMenu li {
+  margin-top: 1vw;
+}
+
+.subMenu>li>a {
+  font-size: 1.4vw;
+}
+
+a:hover {
+  color: yellow;
+}
+
+.mainMenu :nth-child(2):hover .subMenu {
+  display: block;
+}
+
+/* hero image */
+.heroImg img {
+  width: 100%;
+}
+
+/* main content */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+/* three sections */
+
+.firstSection,
+.secondSection,
+.thirdSection {
+  padding: 2vw;
+}
+
+.firstSection {
+  text-align: center;
+}
+
+.secondSection,
+.thirdSection {
+  display: flex;
+  gap: 2vw;
+}
+
+.firstSection p,
+.secondSection p,
+.thirdSection p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: #333;
+}
+
+.firstSection p {
+  font-size: 1.4vw;
+}
+
+.secondSection img,
+.thirdSection img {
+  width: 50%;
+}
+
+.secondSection img {
+  clip-path: polygon(20% 0, 80% 0, 100% 30%, 90% 100%, 10% 100%, 0 30%);
+}
+
+.thirdSection img {
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+}
+
+/* card section */
+.cardSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.cardSection h2 {
+  text-align: center;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardDetail {
+  width: 27%;
+  padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  box-shadow: 0 0 5px #547980;
+}
+
+.cardDetail a img {
+  width: 100%;
+}
+
+.cardInfo ul,
+.cardInfo ol {
+  padding-left: 2vw;
+}
+
+.disc li {
+  list-style: disc;
+}
+
+.square li {
+  list-style: square;
+}
+
+.button {
+  width: 10vw;
+  height: 3vw;
+  line-height: 3vw;
+  border: 1px solid #547980;
+  background-color: #73a4ad;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+}
+
+/* footer section */
+footer {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  background-color: #9de0ad;
+  color: #547980;
+}
+
+.footerMenu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerMenu h3 {
+  font-size: 1.6vw;
+}
+
+.footerMenu>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu p,
+.menu a {
+  font-size: 1.4vw;
+  line-height: 2vw;
+  margin: 0;
+}
+
+.copyright {
+  padding: 1vw;
+  background-color: #547980;
+  color: #fff;
+  text-align: center;
+}
