@@ -46,8 +46,8 @@ table {
 }
 
 thead {
-  background-color: #9de0ad80;
-  color: #547980;
+  background-color: #a4d79280;
+  color: #464745;
   font-size: 1.6vw;
 }
 
@@ -79,7 +79,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 2vw;
-  border: 2px solid #547980;
+  border: 2px solid #526144;
   border-radius: 10px;
   padding: 2vw 4vw;
 }
@@ -143,15 +143,15 @@ input[type="reset"] {
   width: 16vw;
   height: 4vw;
   background-color: transparent;
-  border: 1px solid #547980;
+  border: 1px solid #748d6b;
   font-size: 1.4vw;
-  color: #547980;
+  color: #748d6b;
 }
 
 input[type="submit"] {
   width: 16vw;
   height: 4vw;
-  background-color: #547980;
+  background-color: #748d6b;
   color: #fff;
   font-size: 1.4vw;
   font-weight: 700;

@@ -8,8 +8,8 @@
 
 /* header section */
 header {
-  background-color: #9de0ad;
-  color: #547980;
+  background-color: #a4d792;
+  color: #748d6b;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,8 +41,8 @@ header img {
 .mainMenu {
   display: flex;
   gap: 2vw;
-  padding: 2vw;
-  background-color: #547980;
+  padding: 1vw 2vw;
+  background-color: #464745;
 }
 
 .mainMenu a {
@@ -57,8 +57,8 @@ header img {
 .subMenu {
   position: absolute;
   display: none;
-  background-color: #54798080;
-  padding: 2vw 3vw;
+  background-color: #52614480;
+  padding: 2vw;
   z-index: 2;
 }
 
@@ -70,8 +70,8 @@ header img {
   font-size: 1.4vw;
 }
 
-a:hover {
-  color: yellow;
+.mainMenu a:hover {
+  color: #99fb78;
 }
 
 .mainMenu :nth-child(2):hover .subMenu {
@@ -156,7 +156,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1vw;
-  box-shadow: 0 0 5px #547980;
+  box-shadow: 0 0 5px #526144;
 }
 
 .cardDetail a img {
@@ -180,8 +180,8 @@ main {
   width: 10vw;
   height: 3vw;
   line-height: 3vw;
-  border: 1px solid #547980;
-  background-color: #73a4ad;
+  border: 1px solid #526144;
+  background-color: #748d6b;
   color: #fff;
   align-self: center;
   text-align: center;
@@ -193,8 +193,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1vw;
-  background-color: #9de0ad;
-  color: #547980;
+  background-color: #a4d792;
+  color: #464745;
 }
 
 .footerMenu {
@@ -226,7 +226,11 @@ footer {
 
 .copyright {
   padding: 1vw;
-  background-color: #547980;
+  background-color: #526144;
   color: #fff;
   text-align: center;
+}
+
+footer a:hover {
+  color: #eee;
 }
