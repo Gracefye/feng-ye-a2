@@ -105,7 +105,7 @@ textarea {
 /* name and email */
 .topField {
   display: flex;
-  gap: 20%;
+  gap: 10%;
 }
 
 .topField div {
@@ -162,4 +162,43 @@ input[type="submit"] {
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   filter: brightness(120%);
+}
+
+/* Media queries for making pages responsive */
+
+@media only screen and (max-width: 767px) {
+
+  #video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  video {
+    width: 90%;
+  }
+
+  .topField {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .checkboxList {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  table,
+  form,
+  select {
+    font-size: 1.4vw;
+  }
+
+  input[type="reset"],
+  input[type="submit"] {
+    font-size: 1.6vw;
+  }
+
 }
